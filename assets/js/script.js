@@ -45,20 +45,6 @@ function handleCommand(command) {
   }
 }
 
-
-/*// Glitch-Effekt bei Mouseover
-const glitchElements = document.querySelectorAll('.hero, .cta-button, header');
-
-glitchElements.forEach(element => {
-  element.addEventListener('mouseenter', () => {
-      element.classList.add('glitch');
-  });
-
-  element.addEventListener('mouseleave', () => {
-      element.classList.remove('glitch');
-  });
-});/** */
-
 // Ladebalken
 window.addEventListener('load', function() {
   const loadingBar = document.getElementById('loading-bar');
@@ -66,19 +52,4 @@ window.addEventListener('load', function() {
   setTimeout(function() {
       loadingBar.style.display = 'none';
   }, 1000);
-});
-
-// Vorhandene Funktionen
-document.getElementById('menu-toggle').addEventListener('click', function() {
-  const verticalMenu = document.querySelector('.vertical-menu');
-  verticalMenu.style.display = (verticalMenu.style.display === 'block') ? 'none' : 'block';
-});
-
-document.addEventListener('click', function(event) {
-  const target = event.target;
-  const verticalMenu = document.querySelector('.vertical-menu');
-  const menuToggle = document.getElementById('menu-toggle');
-  if (verticalMenu.style.display === 'block' && target !== verticalMenu && target !== menuToggle) {
-      verticalMenu.style.display = 'none';
-  }
 });
