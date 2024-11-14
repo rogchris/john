@@ -117,10 +117,7 @@ header {
   animation: fadeIn 4s ease-in-out;
 }
 
-/*.cta-button:hover {
-  background-color: #e91e63;
-  transform: scale(1.05);
-}/*/
+
 
 footer {
   background-color: #1f1f1f;
@@ -146,9 +143,7 @@ footer a:hover {
   to { opacity: 1; }
 }
 
-/*.glitch {
-  animation: glitch-animation 1s infinite;
-}
+
 
 @keyframes glitch-animation {
   0% { transform: translate(0); }
@@ -157,7 +152,7 @@ footer a:hover {
   60% { transform: translate(-5px, -5px); }
   80% { transform: translate(5px, 5px); }
   100% { transform: translate(0); }
-}/*
+}
 
 /* Konsolensimulation */
 #console-input {

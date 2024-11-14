@@ -58,6 +58,7 @@ glitchElements.forEach(element => {
       element.classList.remove('glitch');
   });
 });/** */
+
 // Ladebalken
 window.addEventListener('load', function() {
   const loadingBar = document.getElementById('loading-bar');
