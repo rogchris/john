@@ -73,27 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 
-  // Spracherkennung aktivieren
-  if ('webkitSpeechRecognition' in window) {
-      const recognition = new webkitSpeechRecognition();
-      recognition.continuous = false;
-      recognition.lang = 'de-DE';
-      recognition.interimResults = false;
-
-      document.getElementById("chatbot-input").addEventListener("dblclick", function() {
-          recognition.start();
-      });
-
-      recognition.onresult = function(event) {
-          document.getElementById("chatbot-input").value = event.results[0][0].transcript;
-          sendMessage();
-      };
-
-      recognition.onerror = function(event) {
-          console.error("Spracherkennung fehlgeschlagen:", event.error);
-      };
-  }
-
   function sendMessage() {
       const input = document.getElementById("chatbot-input");
       const message = input.value.trim();
