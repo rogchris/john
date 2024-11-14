@@ -146,7 +146,7 @@ footer a:hover {
   to { opacity: 1; }
 }
 
-.glitch {
+/*.glitch {
   animation: glitch-animation 1s infinite;
 }
 
@@ -157,7 +157,7 @@ footer a:hover {
   60% { transform: translate(-5px, -5px); }
   80% { transform: translate(5px, 5px); }
   100% { transform: translate(0); }
-}
+}/*
 
 /* Konsolensimulation */
 #console-input {
