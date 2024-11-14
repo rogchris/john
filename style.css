@@ -1,93 +1,60 @@
 body {
-    font-family: 'Roboto Mono', monospace;
-    background-color: #121212;
-    color: #e0e0e0;
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1.glow-text {
-    color: #00ff99;
-    text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
-  }
-  
-  .hero-subtext {
-    color: #b3b3b3;
-    font-size: 1.2em;
-    margin-top: 10px;
-  }
-  
-  .btn-primary {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    color: #121212;
-    background-color: #00ff99;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-  }
-  
-  .btn-primary:hover {
-    background-color: #00e68a;
-  }
-  
-  .horizontal-menu {
-    display: flex;
-    background-color: #1a1a1a;
-    padding: 10px;
-  }
-  
-  .horizontal-menu a {
-    color: #00ff99;
-    padding: 10px 15px;
-    text-decoration: none;
-  }
-  
-  .horizontal-menu a.active {
-    font-weight: bold;
-    background-color: #333;
-  }
-  
-  .menu-toggle {
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: #00ff99;
-    cursor: pointer;
-    margin-left: auto;
-  }
-  
-  .vertical-menu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    right: 10px;
-    top: 50px;
-    background-color: #1a1a1a;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .vertical-menu a {
-    color: #00ff99;
-    padding: 10px;
-    text-decoration: none;
-  }
-  
-  .vertical-menu a:hover {
-    background-color: #333;
-  }
-  
-  .vertical-menu.show {
-    display: flex;
-  }
-  
-  footer {
-    background-color: #1a1a1a;
-    color: #b3b3b3;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+}
+
+.horizontal-menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.horizontal-menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+.horizontal-menu a:hover {
+  background-color: #575757;
+}
+
+#menu-toggle {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.vertical-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+}
+
+.vertical-menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-top: 1px solid #444;
+}
+
+.vertical-menu a:hover {
+  background-color: #575757;
+}
+
+footer {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}

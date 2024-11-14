@@ -1,9 +1,8 @@
-/**
- * Sichtbarkeit des vertikalen Navigationsmenüs umschalten.
- * @function toggleMenu
- */
-function toggleMenu() {
-    const menu = document.getElementById("verticalMenu");
-    menu.classList.toggle("show"); // Zeigt oder verbirgt das Menü
+document.getElementById('menu-toggle').addEventListener('click', function() {
+  const verticalMenu = document.querySelector('.vertical-menu');
+  if (verticalMenu.style.display === 'block') {
+      verticalMenu.style.display = 'none';
+  } else {
+      verticalMenu.style.display = 'block';
   }
-  
+});

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/darkmode.css">
+    <title>Contact Us - Hacker Themed Website</title>
+</head>
+<body>
+    <header>
+        <nav class="horizontal-menu">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="content.html">Themeninhalt</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="table.html">Tabelle</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <div id="vertical-menu">
+            <button onclick="toggleMenu()">Menü</button>
+            <nav class="vertical-menu">
+                <a href="../index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="content.html">Themeninhalt</a>
+                <a href="impressum.html">Impressum</a>
+                <a href="table.html">Tabelle</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Kontakt</h1>
+            <form action="/" method="get">
+                <label for="anrede">Anrede:</label>
+                <select id="anrede" name="anrede">
+                    <option value="">Bitte wählen</option>
+                    <option value="herr">Herr</option>
+                    <option value="frau">Frau</option>
+                </select><br><br>
+                <label for="vorname">Vorname:</label>
+                <input type="text" id="vorname" name="vorname"><br><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="adresse">Adresse:</label>
+                <input type="text" id="adresse" name="adresse"><br><br>
+                <label for="land">Land:</label>
+                <input type="text" id="land" name="land" list="laender"><br><br>
+                <datalist id="laender">
+                    <option value="Deutschland">
+                </datalist>
+                <label for="kommentar">Kommentar:</label><br>
+                <textarea id="kommentar" name="kommentar" rows="4" cols="50"></textarea><br><br>
+                <button type="submit">Absenden</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Christian Lukowski. Alle Rechte vorbehalten. <a href="impressum.html">Impressum</a></p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
