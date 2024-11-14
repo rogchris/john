@@ -13,6 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .horizontal-menu {
@@ -25,6 +26,7 @@ header {
   text-decoration: none;
   padding: 10px;
   transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
 }
 
 .horizontal-menu a:hover {
@@ -33,17 +35,18 @@ header {
 }
 
 #menu-toggle {
-  background-color: #333;
+  background-color: #007acc;
   color: #ffffff;
   border: none;
   padding: 10px;
   font-size: 1.2em;
   cursor: pointer;
   transition: background-color 0.3s;
+  border-radius: 5px;
 }
 
 #menu-toggle:hover {
-  background-color: #444;
+  background-color: #005f99;
 }
 
 .vertical-menu {
@@ -54,6 +57,7 @@ header {
   top: 60px;
   left: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 .vertical-menu a {
@@ -69,8 +73,20 @@ header {
 
 .hero {
   text-align: center;
-  padding: 100px 20px;
-  background: url('../images/hacking.jpg') no-repeat center center/cover;
+  padding: 150px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hacking.jpg') no-repeat center center/cover;
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5em;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 footer {
@@ -79,6 +95,7 @@ footer {
   text-align: center;
   margin-top: 40px;
   color: #9e9e9e;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
 
 footer a {
