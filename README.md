@@ -1,2 +1,0 @@
-# john
-just a project
