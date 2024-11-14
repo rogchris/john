@@ -28,6 +28,7 @@ consoleInput.addEventListener('keydown', function(event) {
 
 function handleCommand(command) {
   const eastereggSection = document.querySelector('.easteregg');
+
   switch (command) {
       case 'help':
           alert('Available commands: help, easteregg, about');
@@ -43,6 +44,7 @@ function handleCommand(command) {
           alert('Unknown command. Type "help" for a list of commands.');
   }
 }
+
 
 // Glitch-Effekt bei Mouseover
 const glitchElements = document.querySelectorAll('.hero, .cta-button, header');

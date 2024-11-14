@@ -145,3 +145,33 @@ footer a:hover {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+/* ... Bestehender Code ... */
+
+.glitch {
+  animation: glitch-animation 1s infinite;
+}
+
+@keyframes glitch-animation {
+  0% { transform: translate(0); }
+  20% { transform: translate(-5px, 5px); }
+  40% { transform: translate(5px, -5px); }
+  60% { transform: translate(-5px, -5px); }
+  80% { transform: translate(5px, 5px); }
+  100% { transform: translate(0); }
+}
+
+/* Konsolensimulation */
+#console-input {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: calc(100% - 40px);
+  max-width: 500px;
+  padding: 10px;
+  background: #000;
+  color: #0f0;
+  font-family: 'Courier New', Courier, monospace;
+  border: 2px solid #0f0;
+  box-shadow: 0 0 15px #0f0;
+  z-index: 9999;
+}
