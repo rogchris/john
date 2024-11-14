@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/darkmode.css">
-    <title>Contact Us - Hacker Themed Website</title>
+    <title>Contact Us - Christian Lukowski</title>
 </head>
 <body>
     <header>
@@ -18,7 +17,7 @@
             <a href="contact.html">Contact Us</a>
         </nav>
         <div id="vertical-menu">
-            <button onclick="toggleMenu()">Menü</button>
+            <button id="menu-toggle">☰ Menü</button>
             <nav class="vertical-menu">
                 <a href="../index.html">Home</a>
                 <a href="about.html">About Us</a>
@@ -31,27 +30,77 @@
     </header>
     <main>
         <section>
-            <h1>Kontakt</h1>
-            <form action="/" method="get">
+            <h1>Kontaktformular</h1>
+            <form action="contact.html" method="GET">
                 <label for="anrede">Anrede:</label>
                 <select id="anrede" name="anrede">
-                    <option value="">Bitte wählen</option>
-                    <option value="herr">Herr</option>
-                    <option value="frau">Frau</option>
-                </select><br><br>
+                    <option value="Herr">Herr</option>
+                    <option value="Frau">Frau</option>
+                    <option value="Divers">Divers</option>
+                </select>
+                <br><br>
                 <label for="vorname">Vorname:</label>
-                <input type="text" id="vorname" name="vorname"><br><br>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br><br>
+                <input type="text" id="vorname" name="vorname">
+                <br><br>
+                <label for="nachname">Nachname:</label>
+                <input type="text" id="nachname" name="nachname">
+                <br><br>
                 <label for="adresse">Adresse:</label>
-                <input type="text" id="adresse" name="adresse"><br><br>
+                <input type="text" id="adresse" name="adresse">
+                <br><br>
                 <label for="land">Land:</label>
-                <input type="text" id="land" name="land" list="laender"><br><br>
-                <datalist id="laender">
+                <input type="text" id="land" name="land" list="land-list">
+                <datalist id="land-list">
+                    <option value="Albanien">
+                    <option value="Andorra">
+                    <option value="Belgien">
+                    <option value="Bosnien und Herzegowina">
+                    <option value="Bulgarien">
+                    <option value="Dänemark">
                     <option value="Deutschland">
+                    <option value="Estland">
+                    <option value="Finnland">
+                    <option value="Frankreich">
+                    <option value="Griechenland">
+                    <option value="Irland">
+                    <option value="Island">
+                    <option value="Italien">
+                    <option value="Kosovo">
+                    <option value="Kroatien">
+                    <option value="Lettland">
+                    <option value="Liechtenstein">
+                    <option value="Litauen">
+                    <option value="Luxemburg">
+                    <option value="Malta">
+                    <option value="Moldawien">
+                    <option value="Monaco">
+                    <option value="Montenegro">
+                    <option value="Niederlande">
+                    <option value="Nordmazedonien">
+                    <option value="Norwegen">
+                    <option value="Österreich">
+                    <option value="Polen">
+                    <option value="Portugal">
+                    <option value="Rumänien">
+                    <option value="Russland">
+                    <option value="San Marino">
+                    <option value="Schweden">
+                    <option value="Schweiz">
+                    <option value="Serbien">
+                    <option value="Slowakei">
+                    <option value="Slowenien">
+                    <option value="Spanien">
+                    <option value="Tschechien">
+                    <option value="Ukraine">
+                    <option value="Ungarn">
+                    <option value="Vatikanstadt">
+                    <option value="Vereinigtes Königreich">
+                    <option value="Weißrussland">
                 </datalist>
-                <label for="kommentar">Kommentar:</label><br>
-                <textarea id="kommentar" name="kommentar" rows="4" cols="50"></textarea><br><br>
+                <br><br>
+                <label for="kommentar">Kommentar:</label>
+                <textarea id="kommentar" name="kommentar"></textarea>
+                <br><br>
                 <button type="submit">Absenden</button>
             </form>
         </section>
@@ -59,6 +108,6 @@
     <footer>
         <p>&copy; 2024 - Christian Lukowski. Alle Rechte vorbehalten. <a href="impressum.html">Impressum</a></p>
     </footer>
-    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/script.js" defer></script>
 </body>
 </html>

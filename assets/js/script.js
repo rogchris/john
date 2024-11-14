@@ -10,6 +10,11 @@ document.addEventListener('click', function(event) {
   if (verticalMenu.style.display === 'block' && target !== verticalMenu && target !== menuToggle) {
       verticalMenu.style.display = 'none';
   }
+  document.getElementById("land").addEventListener("input", function() {
+    if (this.value.toLowerCase().startsWith("d")) {
+        this.value = "Deutschland";
+    }
+});
 });
 
 // Konsolensimulation im Hacker-Stil
