@@ -209,3 +209,70 @@ footer a:hover {
       padding: 10px 20px; /* Weniger Padding für den CTA-Button auf kleinen Bildschirmen */
   }
 }
+
+#chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+#chatbot-header {
+  background-color: #007acc;
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#chatbot-body {
+  display: none;
+  flex-direction: column;
+  background-color: #121212;
+  padding: 10px;
+  border-top: 1px solid #007acc;
+}
+
+#chatbot-messages {
+  height: 200px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+#chatbot-input {
+  padding: 10px;
+  width: calc(100% - 70px);
+  margin-right: 5px;
+}
+
+#chatbot-send {
+  background-color: #ff4081;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#chatbot-send:hover {
+  background-color: #e91e63;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
