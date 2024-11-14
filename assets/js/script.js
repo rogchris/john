@@ -5,18 +5,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
   menuToggle.addEventListener('click', function(event) {
       event.stopPropagation();
-      if (verticalMenu.style.display === 'none' || verticalMenu.style.display === '') {
-          verticalMenu.style.display = 'block';
-      } else {
-          verticalMenu.style.display = 'none';
-      }
+      // Toggle die Klasse, um das Dropdown-Menü sichtbar/unsichtbar zu machen
+      verticalMenu.classList.toggle('visible');
   });
 
+  // Klick außerhalb des Menüs schließt das Dropdown
   document.addEventListener('click', function(event) {
-      if (verticalMenu.style.display === 'block' && !verticalMenu.contains(event.target) && event.target !== menuToggle) {
-          verticalMenu.style.display = 'none';
+      if (verticalMenu.classList.contains('visible') && !verticalMenu.contains(event.target) && event.target !== menuToggle) {
+          verticalMenu.classList.remove('visible');
       }
   });
+});
 
   // Ladebalken
   window.addEventListener('load', function() {
@@ -117,5 +116,4 @@ document.addEventListener('DOMContentLoaded', function() {
       const speech = new SpeechSynthesisUtterance(response);
       speech.lang = "de-DE";
       window.speechSynthesis.speak(speech);
-  }
-});
+  };
