@@ -186,3 +186,43 @@ footer a:hover {
   z-index: 9999;
   transition: width 0.5s ease;
 }
+/* Media Queries für responsives Design */
+@media (max-width: 768px) {
+  .horizontal-menu {
+      display: none; /* Versteckt das horizontale Menü bei kleineren Bildschirmen */
+  }
+
+  #menu-toggle {
+      display: block; /* Zeigt den Menü-Button für kleinere Bildschirme an */
+  }
+
+  .vertical-menu {
+      display: flex; /* Zeigt das vertikale Menü an */
+  }
+
+  .hero h1 {
+      font-size: 2em; /* Kleinere Schriftgröße für die Überschrift auf Tablets */
+  }
+
+  .hero p {
+      font-size: 1.2em; /* Kleinere Schriftgröße für den Text auf Tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+      padding: 100px 10px; /* Weniger Padding für kleine Bildschirme */
+  }
+
+  .hero h1 {
+      font-size: 1.8em; /* Kleinere Schriftgröße für die Überschrift auf Smartphones */
+  }
+
+  .hero p {
+      font-size: 1em; /* Kleinere Schriftgröße für den Text auf Smartphones */
+  }
+
+  .cta-button {
+      padding: 10px 20px; /* Weniger Padding für den CTA-Button auf kleinen Bildschirmen */
+  }
+}
