@@ -46,7 +46,7 @@ function handleCommand(command) {
 }
 
 
-// Glitch-Effekt bei Mouseover
+/*// Glitch-Effekt bei Mouseover
 const glitchElements = document.querySelectorAll('.hero, .cta-button, header');
 
 glitchElements.forEach(element => {
@@ -57,7 +57,7 @@ glitchElements.forEach(element => {
   element.addEventListener('mouseleave', () => {
       element.classList.remove('glitch');
   });
-});
+});/** */
 // Ladebalken
 window.addEventListener('load', function() {
   const loadingBar = document.getElementById('loading-bar');
