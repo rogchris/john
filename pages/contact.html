@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>Contact Us - Christian Lukowski</title>
+    <style>
+        form {
+            background-color: #1f1f1f;
+            padding: 30px;
+            max-width: 500px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        label {
+            font-weight: bold;
+            color: #ffffff;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #007acc;
+            border-radius: 5px;
+            background-color: #333333;
+            color: #ffffff;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #ff4081;
+            box-shadow: 0 0 8px rgba(255, 64, 129, 0.8);
+        }
+        button {
+            background-color: #ff4081;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #e91e63;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -38,16 +78,16 @@
                     <option value="Frau">Frau</option>
                     <option value="Divers">Divers</option>
                 </select>
-                <br><br>
+
                 <label for="vorname">Vorname:</label>
                 <input type="text" id="vorname" name="vorname">
-                <br><br>
+
                 <label for="nachname">Nachname:</label>
                 <input type="text" id="nachname" name="nachname">
-                <br><br>
+
                 <label for="adresse">Adresse:</label>
                 <input type="text" id="adresse" name="adresse">
-                <br><br>
+
                 <label for="land">Land:</label>
                 <input type="text" id="land" name="land" list="land-list">
                 <datalist id="land-list">
@@ -97,10 +137,10 @@
                     <option value="Vereinigtes Königreich">
                     <option value="Weißrussland">
                 </datalist>
-                <br><br>
+
                 <label for="kommentar">Kommentar:</label>
-                <textarea id="kommentar" name="kommentar"></textarea>
-                <br><br>
+                <textarea id="kommentar" name="kommentar" rows="5"></textarea>
+
                 <button type="submit">Absenden</button>
             </form>
         </section>
