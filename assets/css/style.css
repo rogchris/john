@@ -138,11 +138,13 @@ footer a {
   color: #9e9e9e;
   text-decoration: none;
   transition: color 0.3s;
+  margin-left: 2em; /* Fügt den Abstand hinzu */
 }
 
 footer a:hover {
   color: #ffffff;
 }
+
 
 @keyframes fadeIn {
   from { opacity: 0; }
