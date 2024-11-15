@@ -5,6 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>Themeninhalt - Christian Lukowski</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .horizontal-menu {
+            display: flex;
+            gap: 20px;
+        }
+        .horizontal-menu a {
+            color: #e0e0e0;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+        }
+        .horizontal-menu a:hover {
+            background-color: #ff4081;
+            color: #ffffff;
+        }
+        #menu-toggle {
+            background-color: #007acc;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 5px;
+        }
+        #menu-toggle:hover {
+            background-color: #005f99;
+        }
+        .vertical-menu {
+            display: none;
+            flex-direction: column;
+            background-color: #1f1f1f;
+            position: absolute;
+            top: 60px;
+            left: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+        .vertical-menu a {
+            color: #e0e0e0;
+            text-decoration: none;
+            padding: 15px;
+            border-top: 1px solid #333;
+        }
+        .vertical-menu a:hover {
+            background-color: #ff4081;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        section {
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff4081;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        footer {
+            background-color: #1f1f1f;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            color: #9e9e9e;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer a {
+            color: #9e9e9e;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
     <header>
